@@ -3,19 +3,25 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		733D819F234DB7D400E9F1A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733D819E234DB7D400E9F1A1 /* SceneDelegate.swift */; };
 		73A7D05F234CC6F7003FC459 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A7D05E234CC6F7003FC459 /* AppDelegate.swift */; };
 		73A7D066234CC6F7003FC459 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73A7D064234CC6F7003FC459 /* Main.storyboard */; };
 		73A7D068234CC6F9003FC459 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73A7D067234CC6F9003FC459 /* Assets.xcassets */; };
 		73A7D06B234CC6F9003FC459 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73A7D069234CC6F9003FC459 /* LaunchScreen.storyboard */; };
 		73A7D073234CC801003FC459 /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A7D072234CC801003FC459 /* InputViewController.swift */; };
 		73A7D075234CC820003FC459 /* OutputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A7D074234CC820003FC459 /* OutputViewController.swift */; };
+		93DE024120BE1985E99D26BD /* Pods_YomikataApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BC7E3EEA94B5249FC81AB44 /* Pods_YomikataApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2BC7E3EEA94B5249FC81AB44 /* Pods_YomikataApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YomikataApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C9A5F74EEEE6061833D4AFF /* Pods-YomikataApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YomikataApp.release.xcconfig"; path = "Target Support Files/Pods-YomikataApp/Pods-YomikataApp.release.xcconfig"; sourceTree = "<group>"; };
+		6C9E3CE57EB9917549205676 /* Pods-YomikataApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YomikataApp.debug.xcconfig"; path = "Target Support Files/Pods-YomikataApp/Pods-YomikataApp.debug.xcconfig"; sourceTree = "<group>"; };
+		733D819E234DB7D400E9F1A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		73A7D05B234CC6F7003FC459 /* YomikataApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YomikataApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73A7D05E234CC6F7003FC459 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73A7D065234CC6F7003FC459 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93DE024120BE1985E99D26BD /* Pods_YomikataApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				73A7D05D234CC6F7003FC459 /* YomikataApp */,
 				73A7D05C234CC6F7003FC459 /* Products */,
+				76F7AB364E87F72FEB02FA10 /* Pods */,
+				91B37ACCF917CF8339DF9E81 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				73A7D05E234CC6F7003FC459 /* AppDelegate.swift */,
+				733D819E234DB7D400E9F1A1 /* SceneDelegate.swift */,
 				73A7D072234CC801003FC459 /* InputViewController.swift */,
 				73A7D074234CC820003FC459 /* OutputViewController.swift */,
 				73A7D064234CC6F7003FC459 /* Main.storyboard */,
@@ -67,6 +77,23 @@
 			path = YomikataApp;
 			sourceTree = "<group>";
 		};
+		76F7AB364E87F72FEB02FA10 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6C9E3CE57EB9917549205676 /* Pods-YomikataApp.debug.xcconfig */,
+				4C9A5F74EEEE6061833D4AFF /* Pods-YomikataApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		91B37ACCF917CF8339DF9E81 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2BC7E3EEA94B5249FC81AB44 /* Pods_YomikataApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 73A7D06F234CC6F9003FC459 /* Build configuration list for PBXNativeTarget "YomikataApp" */;
 			buildPhases = (
+				8F82C6117A3A32BDE0B73356 /* [CP] Check Pods Manifest.lock */,
 				73A7D057234CC6F7003FC459 /* Sources */,
 				73A7D058234CC6F7003FC459 /* Frameworks */,
 				73A7D059234CC6F7003FC459 /* Resources */,
+				63C113FE80A1F76D40561296 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +162,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		63C113FE80A1F76D40561296 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YomikataApp/Pods-YomikataApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YomikataApp/Pods-YomikataApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YomikataApp/Pods-YomikataApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F82C6117A3A32BDE0B73356 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YomikataApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		73A7D057234CC6F7003FC459 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -141,6 +212,7 @@
 				73A7D05F234CC6F7003FC459 /* AppDelegate.swift in Sources */,
 				73A7D075234CC820003FC459 /* OutputViewController.swift in Sources */,
 				73A7D073234CC801003FC459 /* InputViewController.swift in Sources */,
+				733D819F234DB7D400E9F1A1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +354,7 @@
 		};
 		73A7D070234CC6F9003FC459 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C9E3CE57EB9917549205676 /* Pods-YomikataApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -301,6 +374,7 @@
 		};
 		73A7D071234CC6F9003FC459 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C9A5F74EEEE6061833D4AFF /* Pods-YomikataApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
