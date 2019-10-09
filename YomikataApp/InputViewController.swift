@@ -50,7 +50,7 @@ class InputViewController: UIViewController, UITextViewDelegate{
                         //segueを呼び出す
                         self.performSegue(withIdentifier: "toOutput", sender: nil)
                     }else{
-                        self.inputTextView.text = "ひらがな化APIのアプリケーションIDがに誤りがあります。\n開発者にお問い合わせください。"
+                        self.inputTextView.text = "ひらがな化APIのアプリケーションIDに誤りがあります。\n開発者にお問い合わせください。"
                     }
                     
                 }else{
